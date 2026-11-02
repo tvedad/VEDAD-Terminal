@@ -1,0 +1,6 @@
+# Required
+requests>=2.31
+
+# Optional — enable extra tools; the app degrades gracefully without them.
+Pillow>=10.0        # image EXIF / GPS / perceptual-hash tools
+phonenumbers>=8.13  # richer offline phone-number parsing

@@ -1,0 +1,15 @@
+# Version control and CI
+.git/
+.github/
+.gitignore
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Local runtime state and investigation data (created at runtime, never baked in)
+data/
+cases/
+.remember/
+.claude/
+*.log
