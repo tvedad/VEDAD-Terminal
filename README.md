@@ -114,12 +114,14 @@ GET	/api/cache/stats	Result-cache size and TTL
 GET	/api/cache/clear	Clear the result cache
 Example:
 
-bash
+```bash
 curl "http://localhost:8080/api/run/dns?q=example.com"
 curl "http://localhost:8080/api/run/ipgeo?q=8.8.8.8"
 curl -X POST "http://localhost:8080/api/batch" \
   -H "Content-Type: application/json" \
   -d '{"queries":[{"tool":"dns","query":"example.com"},{"tool":"tls","query":"example.com"}]}'
+```
+
 Tool categories
 All 438 tools are keyless and grouped by the indicator type they accept. The UI
 auto-detects the input type (IP, domain, email, phone, coordinates, hash, and 25+
