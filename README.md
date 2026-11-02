@@ -47,8 +47,7 @@
 
 Requires **Python 3.10+**.
 
-```bash
-git clone https://github.com/meysam084/Vedad-Terminal.git
+git clone https://github.com/tvedad/Vedad-Terminal.git
 cd Vedad-Terminal
 pip install -r requirements.txt
 python server.py
@@ -59,7 +58,9 @@ python if that is how Python is registered on your system.
 
 Verify the install without starting the server:
 
-bash
+
+          
+
 python server.py --selftest
 # -> SELFTEST OK (438 tools registered)
 Run with Docker
