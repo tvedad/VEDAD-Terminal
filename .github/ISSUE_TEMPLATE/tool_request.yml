@@ -1,0 +1,34 @@
+name: New tool / feature request
+description: Suggest a new keyless tool or a platform feature.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Every tool in this project must work **without an API key** against a free,
+        public source. Requests for key-gated services will be closed or converted.
+  - type: textarea
+    id: idea
+    attributes:
+      label: What should it do?
+      description: Describe the tool or feature and why it is useful for an investigation.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Data source
+      description: The free, public endpoint or dataset it would use.
+      placeholder: https://api.example.com (no key required)
+    validations:
+      required: false
+  - type: dropdown
+    id: keyless
+    attributes:
+      label: Is the data source keyless?
+      options:
+        - "Yes — no account or API key needed"
+        - "Not sure"
+        - "No — it requires a key"
+    validations:
+      required: true
