@@ -46,11 +46,13 @@
 ## Quick start
 
 Requires **Python 3.10+**.
-
+```bash
 git clone https://github.com/tvedad/Vedad-Terminal.git
 cd Vedad-Terminal
 pip install -r requirements.txt
 python server.py
+```
+
 Then open http://localhost:8080.
 
 On Windows the commands are identical from PowerShell or cmd; use py instead of
@@ -60,8 +62,10 @@ Verify the install without starting the server:
 
 
           
-
+```bash
 python server.py --selftest
+```
+
 # -> SELFTEST OK (438 tools registered)
 Run with Docker
 bash
@@ -175,4 +179,4 @@ Made with ❤️ by the Vedad Security Team
 
 ⬆ back to top
 
-</div> ```
+</div>
